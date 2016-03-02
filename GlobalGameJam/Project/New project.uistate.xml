@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="1">First Floor</layout>
+        <layout order="3">Second Floor</layout>
+        <layout order="0">TitleScreen</layout>
+        <layout active="1" order="5">Third Floor</layout>
+        <event-sheet order="2">First Floor</event-sheet>
+        <event-sheet order="4">Second Floor</event-sheet>
+        <event-sheet order="6">Third Floor ES</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/FFPlayer/" />
+        <folder expanded="1" path="animation-folder/Bed/" />
+        <folder expanded="1" path="animation-folder/Plant/" />
+        <folder expanded="1" path="animation-folder/Table/" />
+        <folder expanded="1" path="animation-folder/Trash/" />
+        <folder expanded="1" path="animation-folder/Chair/" />
+        <folder expanded="1" path="animation-folder/Stairs/" />
+        <folder expanded="1" path="animation-folder/Door/" />
+        <folder expanded="1" path="animation-folder/Grill/" />
+        <folder expanded="1" path="animation-folder/Black/" />
+        <folder expanded="1" path="animation-folder/Nurse/" />
+        <folder expanded="1" path="animation-folder/Point1/" />
+        <folder expanded="1" path="animation-folder/Point2/" />
+        <folder expanded="1" path="animation-folder/GirlBed/" />
+        <folder expanded="1" path="animation-folder/Arm/" />
+        <folder expanded="1" path="animation-folder/Cone/" />
+        <folder expanded="1" path="animation-folder/Brad/" />
+        <folder expanded="1" path="animation-folder/TextBG/" />
+        <folder expanded="1" path="animation-folder/FireAxe/" />
+        <folder expanded="1" path="animation-folder/GirlBedBox/" />
+        <folder expanded="1" path="animation-folder/Necro/" />
+        <folder expanded="1" path="animation-folder/NecroBox/" />
+        <folder expanded="1" path="animation-folder/TrashBox/" />
+        <folder expanded="1" path="animation-folder/Safe/" />
+        <folder expanded="1" path="animation-folder/MrSnuggles/" />
+        <folder expanded="1" path="animation-folder/Paper1/" />
+        <folder expanded="1" path="animation-folder/Paper2/" />
+        <folder expanded="1" path="animation-folder/Paper3/" />
+        <folder expanded="1" path="animation-folder/P1/" />
+        <folder expanded="1" path="animation-folder/P2/" />
+        <folder expanded="1" path="animation-folder/P3/" />
+        <folder expanded="1" path="animation-folder/P4/" />
+        <folder expanded="1" path="animation-folder/P5/" />
+        <folder expanded="1" path="animation-folder/P6/" />
+        <folder expanded="1" path="animation-folder/P7/" />
+        <folder expanded="1" path="animation-folder/AntiSocial/" />
+        <folder expanded="1" path="animation-folder/AntiSocBox/" />
+        <folder expanded="1" path="animation-folder/SnugglesBox/" />
+        <folder expanded="1" path="animation-folder/Depressed/" />
+        <folder expanded="1" path="animation-folder/DepressedBox/" />
+        <folder expanded="1" path="animation-folder/SafeBox/" />
+        <folder expanded="1" path="animation-folder/Road/" />
+        <folder expanded="1" path="animation-folder/Car/" />
+        <folder expanded="1" path="animation-folder/Play/" />
+        <folder expanded="1" path="animation-folder/Quit/" />
+        <folder expanded="1" path="animation-folder/Brad_car/" />
+        <folder expanded="1" path="animation-folder/KillableNurse/" />
+        <folder expanded="1" path="animation-folder/Sink/" />
+        <folder expanded="1" path="animation-folder/Shower/" />
+        <folder expanded="1" path="animation-folder/Mirror/" />
+        <folder expanded="1" path="animation-folder/Toilet/" />
+        <folder expanded="1" path="animation-folder/Knife/" />
+        <folder expanded="1" path="animation-folder/Skinny/" />
+        <folder expanded="1" path="animation-folder/Berry/" />
+        <folder expanded="1" path="animation-folder/Mom/" />
+        <folder expanded="1" path="animation-folder/Picture/" />
+        <folder expanded="1" path="animation-folder/Panic/" />
+        <folder expanded="1" path="animation-folder/TeddyBear/" />
+        <folder expanded="1" path="animation-folder/SkinnyBox/" />
+        <folder expanded="1" path="animation-folder/KnifeBox/" />
+        <folder expanded="1" path="animation-folder/PanicBox/" />
+        <folder expanded="1" path="animation-folder/MomBox/" />
+        <folder expanded="1" path="animation-folder/BerryBox/" />
+        <folder expanded="1" path="animation-folder/TeddyBox/" />
+        <folder expanded="1" path="animation-folder/NurseBox/" />
+        <folder expanded="1" path="animation-folder/ThrowUp/" />
+        <folder expanded="1" path="animation-folder/DeadNurse/" />
+        <folder expanded="1" path="animation-folder/OD/" />
+        <folder expanded="1" path="animation-folder/Stairs2/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/LOS/" />
+    </folders-expanded>
+</c2uistate>

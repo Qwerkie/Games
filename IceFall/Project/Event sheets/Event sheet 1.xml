@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="Timer" sid="9801712510685825" static="0" type="number">0</variable>
+        <variable constant="0" name="Spawning" sid="7323539677289162" static="0" type="number">1</variable>
+        <event-block sid="2434052374862787">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="6556449077172058" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5580752132742717" type="IceClimber">
+                    <param id="0" name="Animation">&quot;MovingLeft&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2902272064136564">
+            <conditions>
+                <condition id="3" name="On key released" sid="4405760445109102" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7659005758751614" type="IceClimber">
+                    <param id="0" name="Animation">&quot;StandingLeft&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="385265164914159">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="177647058936099" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8533592116505798" type="IceClimber">
+                    <param id="0" name="Animation">&quot;MovingRight&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6699144344880095">
+            <conditions>
+                <condition id="3" name="On key released" sid="660840501493245" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6554170477635762" type="IceClimber">
+                    <param id="0" name="Animation">&quot;StandingRight&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9658160439357671">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="5076465182263488" type="System">
+                    <param id="0" name="Interval (seconds)">Spawning</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="1111873420104766" type="System">
+                    <param id="0" name="Object to create">Sprite</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(5,550)</param>
+                    <param id="3" name="Y">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5225461688628608">
+            <conditions>
+                <condition id="-18" name="On created" sid="9265897591929538" type="Sprite" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="9458581179961712" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="5574812412640856" type="Sprite">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="9963429451393554" type="Sprite">
+                    <param id="0" name="Angle">90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3487717709738236">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1570844979915962" type="IceClimber">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="8866847682862709" type="Sprite" />
+                <action id="-9" name="Destroy" sid="9966493688740028" type="IceClimber" />
+                <action id="-2" name="Go to layout" sid="9923914672301888" type="System">
+                    <param id="0" name="Layout">End</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4578018362562337">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="9282047050229341" type="System">
+                    <param id="0" name="Interval (seconds)">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="9489669296342158" type="System">
+                    <param id="0" name="Variable">Spawning</param>
+                    <param id="1" name="Value">0.1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9074331836118196">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="9549502537150304" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="5354562504133408" type="System">
+                    <param id="0" name="Variable">Timer</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

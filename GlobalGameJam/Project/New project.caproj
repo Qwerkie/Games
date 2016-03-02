@@ -1,0 +1,1832 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2rarsgibrm4uz</unique-id>
+    <saved-with-version>19500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+        <behavior author="Scirra" id="wrap" version="1">Wrap</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Off</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="FFPlayer" sid="6209664606331806">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="8964288084704866">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="9387308989093025">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="1502467795574449">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7257741929324833" speed="5">
+                    <frame duration="1" hotspotX="0.555556" hotspotY="0.592593" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Player\Shawn_FRONT.png">
+                        <collision-poly>
+                            <point x="0.215278" y="0.268518" />
+                            <point x="0.833333" y="0.268518" />
+                            <point x="0.833333" y="0.467593" />
+                            <point x="0.833333" y="0.592593" />
+                            <point x="0.833333" y="0.740741" />
+                            <point x="0.767361" y="0.958333" />
+                            <point x="0.28125" y="0.958333" />
+                            <point x="0.215278" y="0.770833" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="Forward" pingpong="0" repeatcount="1" repeatto="0" sid="679302801520195" speed="5">
+                    <frame duration="1" hotspotX="0.555556" hotspotY="0.518519">
+                        <collision-poly>
+                            <point x="0.215278" y="0.268518" />
+                            <point x="0.833333" y="0.268518" />
+                            <point x="0.833333" y="0.467593" />
+                            <point x="0.833333" y="0.592593" />
+                            <point x="0.833333" y="0.740741" />
+                            <point x="0.767361" y="0.958333" />
+                            <point x="0.28125" y="0.958333" />
+                            <point x="0.215278" y="0.770833" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.555556" hotspotY="0.518519" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Player\Shawn_FR.png">
+                        <collision-poly>
+                            <point x="0.215278" y="0.268518" />
+                            <point x="0.833333" y="0.268518" />
+                            <point x="0.833333" y="0.467593" />
+                            <point x="0.833333" y="0.592593" />
+                            <point x="0.833333" y="0.740741" />
+                            <point x="0.767361" y="0.958333" />
+                            <point x="0.28125" y="0.958333" />
+                            <point x="0.215278" y="0.770833" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.555556" hotspotY="0.481481" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Player\Shawn_FL.png">
+                        <collision-poly>
+                            <point x="0.215278" y="0.268518" />
+                            <point x="0.833333" y="0.268518" />
+                            <point x="0.833333" y="0.467593" />
+                            <point x="0.833333" y="0.592593" />
+                            <point x="0.833333" y="0.740741" />
+                            <point x="0.767361" y="0.958333" />
+                            <point x="0.28125" y="0.958333" />
+                            <point x="0.215278" y="0.770833" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="7119930058830886" speed="5">
+                    <frame duration="1" hotspotX="0.611111" hotspotY="0.592593" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Player\Left\Shawn_SLL.png">
+                        <collision-poly>
+                            <point x="0.215278" y="0.268518" />
+                            <point x="0.833333" y="0.268518" />
+                            <point x="0.833333" y="0.467593" />
+                            <point x="0.833333" y="0.592593" />
+                            <point x="0.833333" y="0.740741" />
+                            <point x="0.767361" y="0.958333" />
+                            <point x="0.28125" y="0.958333" />
+                            <point x="0.215278" y="0.770833" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.611111" hotspotY="0.571429" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Player\Left\Shawn_SLR.png">
+                        <collision-poly>
+                            <point x="0.215278" y="0.268518" />
+                            <point x="0.833333" y="0.268518" />
+                            <point x="0.833333" y="0.467593" />
+                            <point x="0.833333" y="0.592593" />
+                            <point x="0.833333" y="0.740741" />
+                            <point x="0.767361" y="0.958333" />
+                            <point x="0.28125" y="0.958333" />
+                            <point x="0.215278" y="0.770833" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="Back" pingpong="0" repeatcount="1" repeatto="0" sid="4842023130404893" speed="5">
+                    <frame duration="1" hotspotX="0.611111" hotspotY="0.592593" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Player\Back\Shawn_BACK.png">
+                        <collision-poly>
+                            <point x="0.215278" y="0.268518" />
+                            <point x="0.833333" y="0.268518" />
+                            <point x="0.833333" y="0.467593" />
+                            <point x="0.833333" y="0.592593" />
+                            <point x="0.833333" y="0.740741" />
+                            <point x="0.767361" y="0.958333" />
+                            <point x="0.28125" y="0.958333" />
+                            <point x="0.215278" y="0.770833" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.611111" hotspotY="0.592593" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Player\Back\Shawn_BL.png">
+                        <collision-poly>
+                            <point x="0.215278" y="0.268518" />
+                            <point x="0.833333" y="0.268518" />
+                            <point x="0.833333" y="0.467593" />
+                            <point x="0.833333" y="0.592593" />
+                            <point x="0.833333" y="0.740741" />
+                            <point x="0.767361" y="0.958333" />
+                            <point x="0.28125" y="0.958333" />
+                            <point x="0.215278" y="0.770833" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.611111" hotspotY="0.592593" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Player\Back\Shawn_BR.png">
+                        <collision-poly>
+                            <point x="0.215278" y="0.268518" />
+                            <point x="0.833333" y="0.268518" />
+                            <point x="0.833333" y="0.467593" />
+                            <point x="0.833333" y="0.592593" />
+                            <point x="0.833333" y="0.740741" />
+                            <point x="0.767361" y="0.958333" />
+                            <point x="0.28125" y="0.958333" />
+                            <point x="0.215278" y="0.770833" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="7737900485751001" speed="5">
+                    <frame duration="1" hotspotX="0.444444" hotspotY="0.592593" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Player\Right\Shawn_SRR.png">
+                        <collision-poly>
+                            <point x="0.215278" y="0.268518" />
+                            <point x="0.833333" y="0.268518" />
+                            <point x="0.833333" y="0.467593" />
+                            <point x="0.833333" y="0.592593" />
+                            <point x="0.833333" y="0.740741" />
+                            <point x="0.767361" y="0.958333" />
+                            <point x="0.28125" y="0.958333" />
+                            <point x="0.215278" y="0.770833" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.388889" hotspotY="0.571429" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Player\Right\Shawn_SRL.png">
+                        <collision-poly>
+                            <point x="0.215278" y="0.268518" />
+                            <point x="0.833333" y="0.268518" />
+                            <point x="0.833333" y="0.467593" />
+                            <point x="0.833333" y="0.592593" />
+                            <point x="0.833333" y="0.740741" />
+                            <point x="0.767361" y="0.958333" />
+                            <point x="0.28125" y="0.958333" />
+                            <point x="0.215278" y="0.770833" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Walls" sid="2293947802146074">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3345136454498385">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground" sid="4402636353155262">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Bed" sid="7918000461468061">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2968414292208191">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7088775321424768" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\bed.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.78125" y="0.78125" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.21875" y="0.78125" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Plant" sid="1597362148197278">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9011103654635417">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8228607861907171" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\plant.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.25" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.71875" y="0.28125" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.8125" y="0.8125" />
+                            <point x="0.5" y="1" />
+                            <point x="0.1875" y="0.8125" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="3246542609433461">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Table" sid="4049408548686488">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1647366179201157">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1283641789508742" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\table.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.84375" y="0.5" />
+                            <point x="0.75" y="0.835938" />
+                            <point x="0.515625" y="0.835938" />
+                            <point x="0.25" y="0.835938" />
+                            <point x="0.15625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Trash" sid="7614798934112016">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="455924532907571">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6039464666625421" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\trash.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.25" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.71875" y="0.71875" />
+                            <point x="0.5" y="0.96875" />
+                            <point x="0.28125" y="0.71875" />
+                            <point x="0.21875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Chair" sid="8046654930371647">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="7262956005903908">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="487484393214818" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\chair.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.84375" y="0.5" />
+                            <point x="0.726563" y="0.539063" />
+                            <point x="0.515625" y="0.546875" />
+                            <point x="0.25" y="0.539063" />
+                            <point x="0.15625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Stairs" sid="725225573293913">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9722667745147657" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Door" sid="9623815986953194">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="4970335829097892">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5822473171501438" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\door.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.5" />
+                            <point x="0.5" y="0" />
+                            <point x="0.82" y="0.6" />
+                            <point x="0.82" y="0.4" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Grill" sid="2021437318268716">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9906464774789316">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8753678977604274" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Black" sid="2733942744599571">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6325288160561257" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Nurse" sid="9632966001018517">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="Can see the player." name="seesPlayer" sid="9204828941629355" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="152135078005065">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+                <behavior-type name="LineOfSight" sid="1366236554702086">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>Nurse</type>
+                <type>Cone</type>
+            </container>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="723498165306105" speed="5">
+                    <frame duration="1" hotspotX="0.555556" hotspotY="0.5" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Nurse\Nurse_FRONT.png">
+                        <image-point name="Imagepoint 1" x="0.592593" y="0.444444" />
+                        <collision-poly>
+                            <point x="0.333333" y="0.777778" />
+                            <point x="0.037037" y="0.388889" />
+                            <point x="0.444444" y="0.166667" />
+                            <point x="0.592593" y="0.111111" />
+                            <point x="0.740741" y="0.166667" />
+                            <point x="0.962963" y="0.388889" />
+                            <point x="0.814815" y="0.722222" />
+                            <point x="0.592593" y="0.833333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.592593" hotspotY="0.388889" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Nurse\Nurse_FR.png">
+                        <image-point name="Imagepoint 1" x="0.962963" y="0.5" />
+                        <collision-poly>
+                            <point x="0.333333" y="0.777778" />
+                            <point x="0.037037" y="0.388889" />
+                            <point x="0.444444" y="0.166667" />
+                            <point x="0.592593" y="0.111111" />
+                            <point x="0.740741" y="0.166667" />
+                            <point x="0.962963" y="0.388889" />
+                            <point x="0.814815" y="0.722222" />
+                            <point x="0.592593" y="0.833333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.592593" hotspotY="0.388889" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Nurse\Nurse_FL.png">
+                        <image-point name="Imagepoint 1" x="1" y="0.5" />
+                        <collision-poly>
+                            <point x="0.333333" y="0.777778" />
+                            <point x="0.037037" y="0.388889" />
+                            <point x="0.444444" y="0.166667" />
+                            <point x="0.592593" y="0.111111" />
+                            <point x="0.740741" y="0.166667" />
+                            <point x="0.888889" y="0.388889" />
+                            <point x="0.814815" y="0.722222" />
+                            <point x="0.592593" y="0.833333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="61853823436174" speed="5">
+                    <frame duration="1" hotspotX="0.592593" hotspotY="0.388889" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Nurse\Nurse_BACK.png">
+                        <image-point name="Imagepoint 1" x="1" y="0.444444" />
+                        <collision-poly>
+                            <point x="0.333333" y="0.777778" />
+                            <point x="0.037037" y="0.388889" />
+                            <point x="0.444444" y="0.166667" />
+                            <point x="0.740741" y="0.166667" />
+                            <point x="0.962963" y="0.388889" />
+                            <point x="0.814815" y="0.722222" />
+                            <point x="0.592593" y="0.777778" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.481481" hotspotY="0.444444" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Nurse\Nurse_BR.png">
+                        <image-point name="Imagepoint 1" x="0.962963" y="0.444444" />
+                        <collision-poly>
+                            <point x="0.333333" y="0.777778" />
+                            <point x="0.037037" y="0.388889" />
+                            <point x="0.444444" y="0.166667" />
+                            <point x="0.740741" y="0.166667" />
+                            <point x="0.888889" y="0.388889" />
+                            <point x="0.814815" y="0.722222" />
+                            <point x="0.592593" y="0.777778" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.592593" hotspotY="0.388889" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Nurse\Nurse_BL.png">
+                        <image-point name="Imagepoint 1" x="1" y="0.444444" />
+                        <collision-poly>
+                            <point x="0.333333" y="0.777778" />
+                            <point x="0.037037" y="0.388889" />
+                            <point x="0.444444" y="0.166667" />
+                            <point x="0.740741" y="0.166667" />
+                            <point x="0.962963" y="0.388889" />
+                            <point x="0.814815" y="0.722222" />
+                            <point x="0.592593" y="0.777778" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="6630005049778439" speed="5">
+                    <frame duration="1" hotspotX="0.586207" hotspotY="0.388889" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Nurse\Nurse_SLR.png">
+                        <collision-poly>
+                            <point x="0.413793" y="0.666667" />
+                            <point x="0.0689655" y="0.388889" />
+                            <point x="0.448276" y="0.166667" />
+                            <point x="0.586207" y="0.166667" />
+                            <point x="0.689655" y="0.222222" />
+                            <point x="0.862069" y="0.388889" />
+                            <point x="0.724138" y="0.611111" />
+                            <point x="0.586207" y="0.611111" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.607143" hotspotY="0.388889" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Nurse\Nurse_SLL.png">
+                        <collision-poly>
+                            <point x="0.428571" y="0.666667" />
+                            <point x="0.0714286" y="0.388889" />
+                            <point x="0.464286" y="0.166667" />
+                            <point x="0.607143" y="0.166667" />
+                            <point x="0.714286" y="0.222222" />
+                            <point x="0.964286" y="0.388889" />
+                            <point x="0.75" y="0.611111" />
+                            <point x="0.607143" y="0.611111" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="6126563982651611" speed="5">
+                    <frame duration="1" hotspotX="0.607143" hotspotY="0.611111" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Nurse\Nurse_SRR.png">
+                        <collision-poly>
+                            <point x="0.464286" y="0.833333" />
+                            <point x="0.0714286" y="0.611111" />
+                            <point x="0.428571" y="0.333333" />
+                            <point x="0.607143" y="0.388889" />
+                            <point x="0.75" y="0.388889" />
+                            <point x="0.964286" y="0.611111" />
+                            <point x="0.714286" y="0.777778" />
+                            <point x="0.607143" y="0.833333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.388889" hotspotY="0.586207" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Nurse\Nurse_SRL.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.448276" />
+                            <point x="0.388889" y="0.0689655" />
+                            <point x="0.666667" y="0.413793" />
+                            <point x="0.611111" y="0.586207" />
+                            <point x="0.611111" y="0.724138" />
+                            <point x="0.388889" y="0.862069" />
+                            <point x="0.222222" y="0.689655" />
+                            <point x="0.166667" y="0.586207" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Point1" sid="8887285958605724">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9397669310066078" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Point2" sid="7724332638668882">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9298507435584766" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GirlBed" sid="8413250192192574">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9512710038671841">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9506911985854104" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\girlbed.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5125" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.05" y="0.8" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Arm" sid="2554785191658805">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3834425626745011" speed="5">
+                    <frame duration="1" hotspotX="0.357143" hotspotY="0.538462" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\medicine.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.389401" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.346154" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cone" sid="3665701032619828">
+            <plugin id="Sprite" />
+            <container>
+                <type>Nurse</type>
+                <type>Cone</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3836673660573366" speed="5">
+                    <frame duration="1" hotspotX="0.501949" hotspotY="0.474659">
+                        <collision-poly>
+                            <point x="0.480039" y="0.585854" />
+                            <point x="0.496008" y="0.703903" />
+                            <point x="0.420157" y="0.730731" />
+                            <point x="0.392211" y="0.596586" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Brad" sid="423890241806404">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="6002183434843629">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="7889404794694504">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9607900173760356" speed="5">
+                    <frame duration="1" hotspotX="0.611111" hotspotY="0.592593" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Brad\Brad_FRONT.png">
+                        <collision-poly>
+                            <point x="0.277778" y="0.37037" />
+                            <point x="0.611111" y="0.0740741" />
+                            <point x="0.722222" y="0.518519" />
+                            <point x="0.833333" y="0.592593" />
+                            <point x="0.833333" y="0.740741" />
+                            <point x="0.611111" y="0.962963" />
+                            <point x="0.277778" y="0.814815" />
+                            <point x="0.222222" y="0.592593" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="Forward" pingpong="0" repeatcount="1" repeatto="0" sid="2583720375480354" speed="5">
+                    <frame duration="1" hotspotX="0.611111" hotspotY="0.592593" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Brad\Brad_FRONT.png">
+                        <collision-poly>
+                            <point x="0.277778" y="0.37037" />
+                            <point x="0.611111" y="0.0740741" />
+                            <point x="0.722222" y="0.518519" />
+                            <point x="0.833333" y="0.592593" />
+                            <point x="0.833333" y="0.740741" />
+                            <point x="0.611111" y="0.962963" />
+                            <point x="0.277778" y="0.814815" />
+                            <point x="0.222222" y="0.592593" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.578947" hotspotY="0.592593" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Brad\Brad_FR.png">
+                        <collision-poly>
+                            <point x="0.263158" y="0.37037" />
+                            <point x="0.578947" y="0.0740741" />
+                            <point x="0.736842" y="0.481481" />
+                            <point x="0.894737" y="0.592593" />
+                            <point x="0.789474" y="0.740741" />
+                            <point x="0.578947" y="0.925926" />
+                            <point x="0.263158" y="0.814815" />
+                            <point x="0.105263" y="0.592593" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.611111" hotspotY="0.592593" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Brad\Brad_FL.png">
+                        <collision-poly>
+                            <point x="0.277778" y="0.37037" />
+                            <point x="0.611111" y="0.0740741" />
+                            <point x="0.777778" y="0.481481" />
+                            <point x="0.944444" y="0.592593" />
+                            <point x="0.833333" y="0.740741" />
+                            <point x="0.611111" y="0.851852" />
+                            <point x="0.277778" y="0.814815" />
+                            <point x="0.166667" y="0.592593" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="Back" pingpong="0" repeatcount="1" repeatto="0" sid="3543068136144369" speed="5">
+                    <frame duration="1" hotspotX="0.611111" hotspotY="0.592593" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Brad\Brad_BACK.png">
+                        <collision-poly>
+                            <point x="0.222222" y="0.333333" />
+                            <point x="0.611111" y="0.111111" />
+                            <point x="0.722222" y="0.518519" />
+                            <point x="0.833333" y="0.592593" />
+                            <point x="0.833333" y="0.740741" />
+                            <point x="0.611111" y="0.962963" />
+                            <point x="0.277778" y="0.814815" />
+                            <point x="0.222222" y="0.592593" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.611111" hotspotY="0.592593" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Brad\Brad_BR.png">
+                        <collision-poly>
+                            <point x="0.222222" y="0.333333" />
+                            <point x="0.611111" y="0.111111" />
+                            <point x="0.722222" y="0.518519" />
+                            <point x="0.833333" y="0.592593" />
+                            <point x="0.833333" y="0.740741" />
+                            <point x="0.611111" y="0.888889" />
+                            <point x="0.277778" y="0.814815" />
+                            <point x="0.222222" y="0.592593" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.611111" hotspotY="0.592593" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Brad\Brad_BL.png">
+                        <collision-poly>
+                            <point x="0.222222" y="0.333333" />
+                            <point x="0.611111" y="0.111111" />
+                            <point x="0.722222" y="0.518519" />
+                            <point x="0.833333" y="0.592593" />
+                            <point x="0.833333" y="0.740741" />
+                            <point x="0.611111" y="0.962963" />
+                            <point x="0.277778" y="0.814815" />
+                            <point x="0.222222" y="0.592593" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="7894241379257258" speed="5">
+                    <frame duration="1" hotspotX="0.611111" hotspotY="0.592593" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Brad\Brad_SLR.png">
+                        <collision-poly>
+                            <point x="0.333333" y="0.407407" />
+                            <point x="0.611111" y="0.0740741" />
+                            <point x="0.722222" y="0.518519" />
+                            <point x="0.833333" y="0.592593" />
+                            <point x="0.777778" y="0.703704" />
+                            <point x="0.611111" y="0.962963" />
+                            <point x="0.388889" y="0.740741" />
+                            <point x="0.388889" y="0.592593" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.611111" hotspotY="0.571429" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Brad\Brad_SLL.png">
+                        <collision-poly>
+                            <point x="0.333333" y="0.392857" />
+                            <point x="0.611111" y="0.0714286" />
+                            <point x="0.722222" y="0.5" />
+                            <point x="0.833333" y="0.571429" />
+                            <point x="0.777778" y="0.678571" />
+                            <point x="0.611111" y="0.857143" />
+                            <point x="0.388889" y="0.714286" />
+                            <point x="0.388889" y="0.571429" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="5096454541804894" speed="5">
+                    <frame duration="1" hotspotX="0.388889" hotspotY="0.592593" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Brad\Brad_SRR.png">
+                        <collision-poly>
+                            <point x="0.277778" y="0.518519" />
+                            <point x="0.388889" y="0.037037" />
+                            <point x="0.666667" y="0.407407" />
+                            <point x="0.611111" y="0.592593" />
+                            <point x="0.611111" y="0.740741" />
+                            <point x="0.388889" y="0.962963" />
+                            <point x="0.222222" y="0.703704" />
+                            <point x="0.166667" y="0.592593" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.388889" hotspotY="0.571429" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Brad\Brad_SRL.png">
+                        <collision-poly>
+                            <point x="0.277778" y="0.5" />
+                            <point x="0.388889" y="0.0357143" />
+                            <point x="0.666667" y="0.392857" />
+                            <point x="0.611111" y="0.571429" />
+                            <point x="0.611111" y="0.714286" />
+                            <point x="0.388889" y="0.821429" />
+                            <point x="0.222222" y="0.678571" />
+                            <point x="0.166667" y="0.571429" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextBox" sid="3825077554501269">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Text" sid="3475210724163691">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="6531628176079928">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TextBG" sid="6167885232630718">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="8848810313312163">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6103417113998028" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FireAxe" sid="3928106353618338">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8723960011927952" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\axe.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.28125" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.46875" y="0.46875" />
+                            <point x="0.5" y="0.46875" />
+                            <point x="0.28125" y="0.71875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GirlBedBox" sid="7465064865897159">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7032387850407309" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Necro" sid="3964547105402161">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="6944458110880803">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7814186526306052" speed="5">
+                    <frame duration="1" hotspotX="0.611111" hotspotY="0.576923" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\NEF_FRONT.png">
+                        <collision-poly>
+                            <point x="0.222222" y="0.307692" />
+                            <point x="0.611111" y="0.0769231" />
+                            <point x="0.722222" y="0.5" />
+                            <point x="0.833333" y="0.576923" />
+                            <point x="0.833333" y="0.730769" />
+                            <point x="0.611111" y="0.961538" />
+                            <point x="0.277778" y="0.807692" />
+                            <point x="0.222222" y="0.576923" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NecroBox" sid="9713447082147744">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3885569140210395" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TrashBox" sid="3959184873888245">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9310429775948816" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Safe" sid="5786387481475924">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6668710473957889" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\safe.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.125" />
+                            <point x="0.5" y="0.09375" />
+                            <point x="0.875" y="0.125" />
+                            <point x="0.90625" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="0.90625" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.09375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MrSnuggles" sid="9458109300030572">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6048604241789648" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\mrsnuggles.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.84375" y="0.15625" />
+                            <point x="0.90625" y="0.5" />
+                            <point x="0.90625" y="0.90625" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.46875" y="0.53125" />
+                            <point x="0.1875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Paper1" sid="4914283088552087">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3424687500373319" speed="5">
+                    <frame duration="1" hotspotX="0.434783" hotspotY="0.4" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\paper1.png">
+                        <collision-poly>
+                            <point x="0.217391" y="0.0666667" />
+                            <point x="0.652174" y="0.0666667" />
+                            <point x="0.913043" y="0.4" />
+                            <point x="0.782609" y="0.933333" />
+                            <point x="0.0869565" y="0.933333" />
+                            <point x="0.0434783" y="0.4" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Paper2" sid="4509652604757942">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9326757296490252" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.4" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\paper2.png">
+                        <collision-poly>
+                            <point x="0.307692" y="0.0666667" />
+                            <point x="0.692308" y="0.0666667" />
+                            <point x="0.923077" y="0.4" />
+                            <point x="0.807692" y="0.933333" />
+                            <point x="0.192308" y="0.933333" />
+                            <point x="0.115385" y="0.4" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Paper3" sid="5248083764184045">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1729812943181507" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.4" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\paper3.png">
+                        <collision-poly>
+                            <point x="0.291667" y="0.0666667" />
+                            <point x="0.708333" y="0.0666667" />
+                            <point x="0.916667" y="0.4" />
+                            <point x="0.833333" y="0.933333" />
+                            <point x="0.166667" y="0.933333" />
+                            <point x="0.0833333" y="0.4" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P1" sid="718175355801713">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4068865713510177" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P2" sid="6177822048618979">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3279220185604146" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P3" sid="1442422816860908">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4065011422297596" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P4" sid="8471150670825699">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9615470050647243" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P5" sid="5359945344690985">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6916981519295671" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P6" sid="6699871099956272">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6522452173743216" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="P7" sid="1711743111889395">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7835568449583504" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground2" sid="5117220478195353">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="6268806808194269">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\stove.png" />
+        </object-type>
+        <object-type name="AntiSocial" sid="8589565444265977">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8351603524765985" speed="5">
+                    <frame duration="1" hotspotX="0.388889" hotspotY="0.607143" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\ANTISOC.png">
+                        <collision-poly>
+                            <point x="0.611111" y="0.607143" />
+                            <point x="0.611111" y="0.75" />
+                            <point x="0.388889" y="0.964286" />
+                            <point x="0.222222" y="0.714286" />
+                            <point x="0.166667" y="0.607143" />
+                            <point x="0.277778" y="0.535714" />
+                            <point x="0.388889" y="0.107143" />
+                            <point x="0.666667" y="0.428571" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AntiSocBox" sid="836456409457674">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2489457017204485" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SnugglesBox" sid="2348594777595393">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6082111171835204" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Depressed" sid="2896774033666209">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7204858474400248" speed="5">
+                    <frame duration="1" hotspotX="0.611111" hotspotY="0.576923" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\DEPRESSED_FRONT.png">
+                        <collision-poly>
+                            <point x="0.277778" y="0.346154" />
+                            <point x="0.611111" y="0.0384615" />
+                            <point x="0.722222" y="0.5" />
+                            <point x="0.833333" y="0.576923" />
+                            <point x="0.833333" y="0.730769" />
+                            <point x="0.611111" y="0.961538" />
+                            <point x="0.277778" y="0.807692" />
+                            <point x="0.222222" y="0.576923" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DepressedBox" sid="8358150516803468">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6890915818779269" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SafeBox" sid="509608821174546">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="345047611685841" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Grass" sid="5931498437262607">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Wrap" sid="936906693949018">
+                    <behavior id="wrap" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Jonathan\Desktop\The Game\Game Art\Title Screen\GRASS1.png" />
+        </object-type>
+        <object-type name="Road" sid="9850562586788061">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Wrap" sid="5058591338305188">
+                    <behavior id="wrap" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7438837164986163" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jonathan\Desktop\The Game\Game Art\Title Screen\MENU_BACK.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Car" sid="5611004216911305">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5179453281915398" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jonathan\Desktop\The Game\Game Art\Title Screen\MENU_CAR.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.5625" />
+                            <point x="0.5" y="0.234375" />
+                            <point x="0.742188" y="0.515625" />
+                            <point x="0.734375" y="0.5" />
+                            <point x="0.5" y="0.609375" />
+                            <point x="0.296875" y="0.40625" />
+                            <point x="0.28125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jonathan\Desktop\The Game\Game Art\Title Screen\MENU_CAR2.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.5625" />
+                            <point x="0.5" y="0.234375" />
+                            <point x="0.742188" y="0.515625" />
+                            <point x="0.734375" y="0.5" />
+                            <point x="0.5" y="0.609375" />
+                            <point x="0.296875" y="0.40625" />
+                            <point x="0.28125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlayButtonBackground" sid="9452472691630353">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Jonathan\Desktop\The Game\Game Art\Title Screen\ButtonBackground.png" />
+        </object-type>
+        <object-type name="Play" sid="9088544421342114">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3223511076829858" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jonathan\Desktop\The Game\Game Art\Title Screen\play.png">
+                        <collision-poly>
+                            <point x="0.230769" y="0.0625" />
+                            <point x="0.769231" y="0.0625" />
+                            <point x="0.961538" y="0.5" />
+                            <point x="0.769231" y="0.9375" />
+                            <point x="0.230769" y="0.9375" />
+                            <point x="0.0384615" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Quit" sid="7468926559419857">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6361924339197094" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jonathan\Desktop\The Game\Game Art\Title Screen\quit.png">
+                        <collision-poly>
+                            <point x="0.230769" y="0.0625" />
+                            <point x="0.769231" y="0.0625" />
+                            <point x="0.961538" y="0.5" />
+                            <point x="0.769231" y="0.9375" />
+                            <point x="0.230769" y="0.9375" />
+                            <point x="0.0384615" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="65723051553135">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Audio" sid="4494176465877928">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Brad_car" sid="7312187178757411">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4927457521132267" speed="5">
+                    <frame duration="1" hotspotX="0.388889" hotspotY="0.571429" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Brad\Brad_Car.png">
+                        <collision-poly>
+                            <point x="0.388889" y="0.0357143" />
+                            <point x="0.666667" y="0.392857" />
+                            <point x="0.388889" y="0.5" />
+                            <point x="0.5" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="KillableNurse" sid="68380555611232">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="Can see the player." name="seesPlayer" sid="4817047000480149" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="8254098947337029">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+                <behavior-type name="LineOfSight" sid="3149168375700875">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="6190831316889971">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="467912079775953" speed="5">
+                    <frame duration="1" hotspotX="0.555556" hotspotY="0.5" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Nurse\Nurse_FRONT.png">
+                        <image-point name="Imagepoint 1" x="0.592593" y="0.444444" />
+                        <collision-poly>
+                            <point x="0.333333" y="0.777778" />
+                            <point x="0.037037" y="0.388889" />
+                            <point x="0.444444" y="0.166667" />
+                            <point x="0.592593" y="0.111111" />
+                            <point x="0.740741" y="0.166667" />
+                            <point x="0.962963" y="0.388889" />
+                            <point x="0.814815" y="0.722222" />
+                            <point x="0.592593" y="0.833333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.592593" hotspotY="0.388889" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Nurse\Nurse_FR.png">
+                        <image-point name="Imagepoint 1" x="0.962963" y="0.5" />
+                        <collision-poly>
+                            <point x="0.333333" y="0.777778" />
+                            <point x="0.037037" y="0.388889" />
+                            <point x="0.444444" y="0.166667" />
+                            <point x="0.592593" y="0.111111" />
+                            <point x="0.740741" y="0.166667" />
+                            <point x="0.962963" y="0.388889" />
+                            <point x="0.814815" y="0.722222" />
+                            <point x="0.592593" y="0.833333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.592593" hotspotY="0.388889" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Nurse\Nurse_FL.png">
+                        <image-point name="Imagepoint 1" x="1" y="0.5" />
+                        <collision-poly>
+                            <point x="0.333333" y="0.777778" />
+                            <point x="0.037037" y="0.388889" />
+                            <point x="0.444444" y="0.166667" />
+                            <point x="0.592593" y="0.111111" />
+                            <point x="0.740741" y="0.166667" />
+                            <point x="0.888889" y="0.388889" />
+                            <point x="0.814815" y="0.722222" />
+                            <point x="0.592593" y="0.833333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="9980432879478786" speed="5">
+                    <frame duration="1" hotspotX="0.592593" hotspotY="0.388889" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Nurse\Nurse_BACK.png">
+                        <image-point name="Imagepoint 1" x="1" y="0.444444" />
+                        <collision-poly>
+                            <point x="0.333333" y="0.777778" />
+                            <point x="0.037037" y="0.388889" />
+                            <point x="0.444444" y="0.166667" />
+                            <point x="0.740741" y="0.166667" />
+                            <point x="0.962963" y="0.388889" />
+                            <point x="0.814815" y="0.722222" />
+                            <point x="0.592593" y="0.777778" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.481481" hotspotY="0.444444" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Nurse\Nurse_BR.png">
+                        <image-point name="Imagepoint 1" x="0.962963" y="0.444444" />
+                        <collision-poly>
+                            <point x="0.333333" y="0.777778" />
+                            <point x="0.037037" y="0.388889" />
+                            <point x="0.444444" y="0.166667" />
+                            <point x="0.740741" y="0.166667" />
+                            <point x="0.888889" y="0.388889" />
+                            <point x="0.814815" y="0.722222" />
+                            <point x="0.592593" y="0.777778" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.592593" hotspotY="0.388889" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Nurse\Nurse_BL.png">
+                        <image-point name="Imagepoint 1" x="1" y="0.444444" />
+                        <collision-poly>
+                            <point x="0.333333" y="0.777778" />
+                            <point x="0.037037" y="0.388889" />
+                            <point x="0.444444" y="0.166667" />
+                            <point x="0.740741" y="0.166667" />
+                            <point x="0.962963" y="0.388889" />
+                            <point x="0.814815" y="0.722222" />
+                            <point x="0.592593" y="0.777778" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="4377269300793504" speed="5">
+                    <frame duration="1" hotspotX="0.586207" hotspotY="0.388889" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Nurse\Nurse_SLR.png">
+                        <collision-poly>
+                            <point x="0.413793" y="0.666667" />
+                            <point x="0.0689655" y="0.388889" />
+                            <point x="0.448276" y="0.166667" />
+                            <point x="0.586207" y="0.166667" />
+                            <point x="0.689655" y="0.222222" />
+                            <point x="0.862069" y="0.388889" />
+                            <point x="0.724138" y="0.611111" />
+                            <point x="0.586207" y="0.611111" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.607143" hotspotY="0.388889" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Nurse\Nurse_SLL.png">
+                        <collision-poly>
+                            <point x="0.428571" y="0.666667" />
+                            <point x="0.0714286" y="0.388889" />
+                            <point x="0.464286" y="0.166667" />
+                            <point x="0.607143" y="0.166667" />
+                            <point x="0.714286" y="0.222222" />
+                            <point x="0.964286" y="0.388889" />
+                            <point x="0.75" y="0.611111" />
+                            <point x="0.607143" y="0.611111" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="9978136421565373" speed="5">
+                    <frame duration="1" hotspotX="0.607143" hotspotY="0.611111" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Nurse\Nurse_SRR.png">
+                        <collision-poly>
+                            <point x="0.464286" y="0.833333" />
+                            <point x="0.0714286" y="0.611111" />
+                            <point x="0.428571" y="0.333333" />
+                            <point x="0.607143" y="0.388889" />
+                            <point x="0.75" y="0.388889" />
+                            <point x="0.964286" y="0.611111" />
+                            <point x="0.714286" y="0.777778" />
+                            <point x="0.607143" y="0.833333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.388889" hotspotY="0.586207" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\Nurse\Nurse_SRL.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.448276" />
+                            <point x="0.388889" y="0.0689655" />
+                            <point x="0.666667" y="0.413793" />
+                            <point x="0.611111" y="0.586207" />
+                            <point x="0.611111" y="0.724138" />
+                            <point x="0.388889" y="0.862069" />
+                            <point x="0.222222" y="0.689655" />
+                            <point x="0.166667" y="0.586207" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sink" sid="3557908283277988">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1051418880938227">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6915457808754694" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.484848" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\bathroom_sink.png">
+                        <collision-poly>
+                            <point x="0.0909091" y="0.212121" />
+                            <point x="0.5" y="0.030303" />
+                            <point x="0.909091" y="0.212121" />
+                            <point x="0.954545" y="0.484848" />
+                            <point x="0.681818" y="0.606061" />
+                            <point x="0.5" y="0.969697" />
+                            <point x="0.318182" y="0.606061" />
+                            <point x="0.0454545" y="0.484848" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Shower" sid="2289032695529321">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="4251018624194368">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6939126621044867" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\shower.png">
+                        <collision-poly>
+                            <point x="0.0555556" y="0.214286" />
+                            <point x="0.5" y="0.0357143" />
+                            <point x="0.944444" y="0.214286" />
+                            <point x="0.944444" y="0.785714" />
+                            <point x="0.5" y="0.964286" />
+                            <point x="0.0555556" y="0.785714" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mirror" sid="5378133968808141">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="53481406831458" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.65" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\mirror.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.3" />
+                            <point x="0.5" y="0.15" />
+                            <point x="0.9375" y="0.3" />
+                            <point x="0.9375" y="0.65" />
+                            <point x="0.875" y="0.95" />
+                            <point x="0.125" y="0.95" />
+                            <point x="0.0625" y="0.65" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Toilet" sid="6023369875989056">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="4392625909358915">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5836657671811264" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.482759" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\toilet.png">
+                        <collision-poly>
+                            <point x="0.0454545" y="0.137931" />
+                            <point x="0.5" y="0.0344828" />
+                            <point x="0.954545" y="0.137931" />
+                            <point x="0.818182" y="0.482759" />
+                            <point x="0.772727" y="0.689655" />
+                            <point x="0.5" y="0.931035" />
+                            <point x="0.272727" y="0.655172" />
+                            <point x="0.181818" y="0.482759" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Knife" sid="2086092505012369">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3106723656165242" speed="5">
+                    <frame duration="1" hotspotX="0.833333" hotspotY="0.619048" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\knife.png">
+                        <collision-poly>
+                            <point x="0" y="0.285714" />
+                            <point x="0.833333" y="0.142857" />
+                            <point x="1" y="0.285714" />
+                            <point x="1" y="0.619048" />
+                            <point x="1" y="0.904762" />
+                            <point x="0" y="0.904762" />
+                            <point x="0" y="0.619048" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Skinny" sid="5142572266673872">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="163590183996709">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3233557087626055" speed="5">
+                    <frame duration="1" hotspotX="0.611111" hotspotY="0.592593" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\SKINNY_KID.png">
+                        <collision-poly>
+                            <point x="0.777778" y="0.592593" />
+                            <point x="0.777778" y="0.703704" />
+                            <point x="0.611111" y="0.962963" />
+                            <point x="0.5" y="0.666667" />
+                            <point x="0.5" y="0.592593" />
+                            <point x="0.333333" y="0.407407" />
+                            <point x="0.611111" y="0.0740741" />
+                            <point x="0.722222" y="0.518519" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Berry" sid="2670807645356816">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1974630810572791">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4634350646929046" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\berryplant.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.25" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.71875" y="0.28125" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.8125" y="0.8125" />
+                            <point x="0.5" y="1" />
+                            <point x="0.1875" y="0.8125" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mom" sid="5303727148528611">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8997411132930696">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7828184099597281" speed="5">
+                    <frame duration="1" hotspotX="0.611111" hotspotY="0.576923" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\MOM_FRONT.png">
+                        <collision-poly>
+                            <point x="0.277778" y="0.346154" />
+                            <point x="0.611111" y="0.115385" />
+                            <point x="0.833333" y="0.423077" />
+                            <point x="0.777778" y="0.576923" />
+                            <point x="0.777778" y="0.692308" />
+                            <point x="0.611111" y="0.961538" />
+                            <point x="0.333333" y="0.769231" />
+                            <point x="0.277778" y="0.576923" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Picture" sid="6992391213259643">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3421678131976164" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\wall painting.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Panic" sid="7763458242360064">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="776501705549205">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1922703743543329" speed="5">
+                    <frame duration="1" hotspotX="0.611111" hotspotY="0.592593" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\SIT_BOY.png">
+                        <collision-poly>
+                            <point x="0.222222" y="0.333333" />
+                            <point x="0.611111" y="0.037037" />
+                            <point x="0.722222" y="0.518519" />
+                            <point x="0.888889" y="0.592593" />
+                            <point x="0.833333" y="0.740741" />
+                            <point x="0.611111" y="0.925926" />
+                            <point x="0.166667" y="0.888889" />
+                            <point x="0.166667" y="0.592593" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TeddyBear" sid="1031680298500292">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6300575463869112" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.46875" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\teddybear.png">
+                        <collision-poly>
+                            <point x="0.285714" y="0.28125" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.714286" y="0.28125" />
+                            <point x="0.857143" y="0.46875" />
+                            <point x="0.714286" y="0.65625" />
+                            <point x="0.5" y="0.84375" />
+                            <point x="0.285714" y="0.65625" />
+                            <point x="0.142857" y="0.46875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SkinnyBox" sid="7014613144914704">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2475125938681612" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="KnifeBox" sid="465533808858173">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5580837148889646" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PanicBox" sid="2902674177502607">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1959216718932168" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MomBox" sid="6443619972699362">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4575861328546903" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BerryBox" sid="569745902914677">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9522781966992163" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TeddyBox" sid="4460427575161392">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9582271426053171" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NurseBox" sid="7603723139682974">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5430056928188179" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ThrowUp" sid="6359237933087046">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4814921178425938" speed="5">
+                    <frame duration="1" hotspotX="0.483871" hotspotY="0.5" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\throwup.png">
+                        <collision-poly>
+                            <point x="0.935484" y="0.5" />
+                            <point x="0.903226" y="0.933333" />
+                            <point x="0.483871" y="0.866667" />
+                            <point x="0.225806" y="0.766667" />
+                            <point x="0.0645161" y="0.5" />
+                            <point x="0.16129" y="0.166667" />
+                            <point x="0.483871" y="0.0333333" />
+                            <point x="0.806452" y="0.166667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DeadNurse" sid="8467026557909109">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="206787679165055" speed="5">
+                    <frame duration="1" hotspotX="0.354839" hotspotY="0.590909" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\DEAD_NURSE.png">
+                        <collision-poly>
+                            <point x="0.0645161" y="0.363636" />
+                            <point x="0.83871" y="0.0909091" />
+                            <point x="0.967742" y="0.590909" />
+                            <point x="0.741935" y="0.954545" />
+                            <point x="0.354839" y="0.772727" />
+                            <point x="0.129032" y="0.727273" />
+                            <point x="0.0322581" y="0.590909" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="OD" sid="5998930091462908">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7136453532557818" speed="5">
+                    <frame duration="1" hotspotX="0.576923" hotspotY="0.47619" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\OD.png">
+                        <collision-poly>
+                            <point x="0.307692" y="0.142857" />
+                            <point x="0.576923" y="0.0952381" />
+                            <point x="0.730769" y="0.285714" />
+                            <point x="0.961538" y="0.47619" />
+                            <point x="0.807692" y="0.761905" />
+                            <point x="0.576923" y="0.809524" />
+                            <point x="0.307692" y="0.809524" />
+                            <point x="0.0769231" y="0.47619" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Stairs2" sid="7409485987916746">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7837261806442885" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="5030363722177717">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7795498892886762" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.521739" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\floor1.png">
+                        <collision-poly>
+                            <point x="0.0909091" y="0.130435" />
+                            <point x="0.5" y="0.0434783" />
+                            <point x="0.909091" y="0.130435" />
+                            <point x="0.954545" y="0.521739" />
+                            <point x="0.909091" y="0.913043" />
+                            <point x="0.5" y="0.956522" />
+                            <point x="0.0909091" y="0.913043" />
+                            <point x="0.0454545" y="0.521739" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="4500218606477356">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2833997621764963" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.521739" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\floor2.png">
+                        <collision-poly>
+                            <point x="0.0909091" y="0.130435" />
+                            <point x="0.5" y="0.0434783" />
+                            <point x="0.909091" y="0.130435" />
+                            <point x="0.954545" y="0.521739" />
+                            <point x="0.909091" y="0.913043" />
+                            <point x="0.5" y="0.956522" />
+                            <point x="0.0909091" y="0.913043" />
+                            <point x="0.0454545" y="0.521739" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="5378361119795741">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8423310150214324" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.521739" original-source="\\psbdfilesrvr.psu-erie.bd.psu.edu\student\rah5360\private\desktop\GGJ\Pictures\floor3.png">
+                        <collision-poly>
+                            <point x="0.0909091" y="0.130435" />
+                            <point x="0.5" y="0.0434783" />
+                            <point x="0.909091" y="0.130435" />
+                            <point x="0.954545" y="0.521739" />
+                            <point x="0.909091" y="0.913043" />
+                            <point x="0.5" y="0.956522" />
+                            <point x="0.0909091" y="0.913043" />
+                            <point x="0.0454545" y="0.521739" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LOS" sid="7584452044162328">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4971916163883741" speed="5">
+                    <frame duration="1" hotspotX="0.333333" hotspotY="0.502976">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>First Floor.xml</layout>
+        <layout>Second Floor.xml</layout>
+        <layout>TitleScreen.xml</layout>
+        <layout>Third Floor.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>First Floor.xml</event-sheet>
+        <event-sheet>Second Floor.xml</event-sheet>
+        <event-sheet>TitleScreenES.xml</event-sheet>
+        <event-sheet>Third Floor ES.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="20" />
+        <global-instance type="Mouse" uid="316" />
+        <global-instance type="Audio" uid="317">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+                <speed-of-sound>5000</speed-of-sound>
+                <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="Brad.ogg" />
+        <file name="Car Crash.ogg" />
+        <file name="Car Party.ogg" />
+        <file name="Dying Nurse.ogg" />
+        <file name="Hospital Wake Up.ogg" />
+        <file name="Nurse Catches you.ogg" />
+        <file name="Stairs.ogg" />
+        <file name="Throwing Up.ogg" />
+        <file name="Title Screen.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="Hospital First Floor.ogg" />
+        <file name="Hospital Second Floor.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

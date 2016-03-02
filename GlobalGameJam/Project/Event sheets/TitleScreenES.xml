@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>TitleScreenES</name>
+    <events>
+        <variable constant="0" name="BOpacity" sid="645616182850885" static="0" type="number">0</variable>
+        <variable constant="0" name="asdf" sid="1520648479496278" static="0" type="number">0</variable>
+        <event-block sid="6679407969502923">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="4207471997576219" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="1241108740289623" type="Grass">
+                    <param id="0" name="X">Grass.X-10</param>
+                </action>
+                <action id="-1" name="Set X" sid="6173418325254704" type="Road">
+                    <param id="0" name="X">Road.X-10</param>
+                </action>
+                <action id="4" name="Set animation" sid="7587953941668738" type="Car">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5728063449116908">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4477738016340003" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="7118801468341344" type="Audio">
+                    <param id="0" name="Audio file">Title Screen</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6948534960576002">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="1168423911549711" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Play</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="9669553277831533" type="Audio" />
+                <action id="-9" name="Destroy" sid="1701787208501825" type="Play" />
+                <action id="-9" name="Destroy" sid="9996022956618791" type="Quit" />
+                <action id="-9" name="Destroy" sid="574316503096768" type="PlayButtonBackground" />
+                <action id="0" name="Play" sid="9147295085682889" type="Audio">
+                    <param id="0" name="Audio file">Car Party</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;ab&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="6394503073463821" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3297133447395049" type="Text">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="2198564510016252" type="Brad_car">
+                    <param id="0" name="Opacity">50</param>
+                </action>
+                <action id="0" name="Set text" sid="7667019342753764" type="Text">
+                    <param id="0" name="Text">&quot;Shawn: Yo man this party is going to be killer&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="6486874852593341" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="5307082171882477" type="Brad_car">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="0" name="Set text" sid="6636569022954188" type="Text">
+                    <param id="0" name="Text">&quot;Brad: Yea man this is going to be da realest!&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="1642757392015745" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="0" name="Set text" sid="81265941246277" type="Text">
+                    <param id="0" name="Text">&quot;Brad: SHAWN LOOK OUT YOU DUMBASS!!!&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="4685978772308269" type="System">
+                    <param id="0" name="Seconds">3.0</param>
+                </action>
+                <action id="-9" name="Set value" sid="1450150359850114" type="System">
+                    <param id="0" name="Variable">asdf</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4636664677544514">
+            <conditions>
+                <condition id="0" name="On click" sid="1061593509154827" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                </condition>
+                <condition id="7" name="Cursor is over object" sid="3283937518897091" type="Mouse">
+                    <param id="0" name="Object">Quit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="7951625062842889" type="Audio" />
+                <action id="0" name="Play" sid="7531560046108459" type="Audio">
+                    <param id="0" name="Audio file">Hospital First Floor</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6137989743489637">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6996579407009728" type="System">
+                    <param id="0" name="Variable">asdf</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="6369824154650211" type="Black">
+                    <param id="0" name="Opacity">Black.Opacity + 2.5</param>
+                </action>
+                <action id="-9" name="Set value" sid="3009441422864053" type="System">
+                    <param id="0" name="Variable">BOpacity</param>
+                    <param id="1" name="Value">Black.Opacity</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6409241762497659">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7812515114825032" type="System">
+                    <param id="0" name="Variable">BOpacity</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">25</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="59700951245762" type="Audio">
+                    <param id="0" name="Tag">&quot;ab&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="477657244675993">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="362553603732128" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="2420867299950299" type="Audio">
+                            <param id="0" name="Audio file">Car Crash</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="3669556284637489" type="System">
+                            <param id="0" name="Seconds">5.0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="2101801331829236" type="System">
+                            <param id="0" name="Layout">First Floor</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="4392083167695414" type="Audio" />
+                        <action id="0" name="Play" sid="3787005275104198" type="Audio">
+                            <param id="0" name="Audio file">Hospital First Floor</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;HFF&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,885 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>First Floor</name>
+    <events>
+        <variable constant="0" name="TrashCans" sid="3509735382970846" static="0" type="number">0</variable>
+        <variable constant="0" name="Key" sid="1752888894628582" static="0" type="number">0</variable>
+        <variable constant="0" name="NecroMission" sid="3668335091846257" static="0" type="number">0</variable>
+        <variable constant="0" name="Mission" sid="9087063710665937" static="0" type="number">0</variable>
+        <variable constant="0" name="AxeMission" sid="7012085671890523" static="0" type="number">0</variable>
+        <variable constant="0" name="Axe" sid="7342692760454924" static="0" type="number">0</variable>
+        <variable constant="0" name="Arm" sid="7991983975885476" static="0" type="number">0</variable>
+        <event-block sid="9166937027859841">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6376501631693622" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="2" name="Stop" sid="1837316459939241" type="Nurse" />
+                <action behavior="Pathfinding" id="4" name="Regenerate obstacle map" sid="7440757975144439" type="Nurse" />
+            </actions>
+        </event-block>
+        <event-block sid="4095072620124482">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8368615444497106" type="System" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="2380115227821769" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="866415882730014">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8406069930105671" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="2582516106708613" type="TextBG">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7950356548729164" type="Text">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4845366875699481">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="1539782247337658" type="Black">
+                    <param id="0" name="Object">FFPlayer</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="5222458019360983" type="Black">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4785668308137062">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="8070837490366547" type="Black">
+                    <param id="0" name="Object">FFPlayer</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="5296365914505571" type="Black">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="2785339341375327" title="FFAnimation">
+            <sub-events>
+                <event-block sid="6220684067265528">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="8817355361000635" type="Keyboard">
+                            <param id="0" name="Key">40 (Down arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="2058853497383503" type="FFPlayer">
+                            <param id="0" name="Animation">&quot;Forward&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="6953387730787176" type="Brad">
+                            <param id="0" name="Animation">&quot;Forward&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9885045971435157">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="9390841611509842" type="Keyboard">
+                            <param id="0" name="Key">40 (Down arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8747832032161594" type="FFPlayer">
+                            <param id="0" name="Animation">&quot;Forward&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="2" name="Stop" sid="7359473024534076" type="FFPlayer" />
+                        <action id="5" name="Set frame" sid="2511841966374116" type="FFPlayer">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1758437947551004">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="626720899834211" type="Keyboard">
+                            <param id="0" name="Key">38 (Up arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9781001729275224" type="FFPlayer">
+                            <param id="0" name="Animation">&quot;Back&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="3878564757406085" type="Brad">
+                            <param id="0" name="Animation">&quot;Back&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1495385305267923">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="893172002942371" type="Keyboard">
+                            <param id="0" name="Key">38 (Up arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8396202242889117" type="FFPlayer">
+                            <param id="0" name="Animation">&quot;Back&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="2" name="Stop" sid="5037683985031871" type="FFPlayer" />
+                        <action id="5" name="Set frame" sid="6239369545148064" type="FFPlayer">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4107574214780222">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="8393882486900076" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8700137331072953" type="FFPlayer">
+                            <param id="0" name="Animation">&quot;Left&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="5401223037661004" type="Brad">
+                            <param id="0" name="Animation">&quot;Left&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7980880197967495">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="6001382411462053" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9650365499091538" type="FFPlayer">
+                            <param id="0" name="Animation">&quot;Left&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="2" name="Stop" sid="6025169692268167" type="FFPlayer" />
+                        <action id="5" name="Set frame" sid="596818380097265" type="FFPlayer">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="334306558922933">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="1804929653136312" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7450700301921254" type="FFPlayer">
+                            <param id="0" name="Animation">&quot;Right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="5107950685551822" type="Brad">
+                            <param id="0" name="Animation">&quot;Right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2538288984094269">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="3629881705221568" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="129385206000979" type="FFPlayer">
+                            <param id="0" name="Animation">&quot;Right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="2" name="Stop" sid="5038413797414135" type="FFPlayer" />
+                        <action id="5" name="Set frame" sid="9150053639151951" type="FFPlayer">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="121709228586919" title="FF Nurse">
+            <sub-events>
+                <event-block sid="3839953876202339">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="7131901088725396" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="9927788273669277" type="Cone">
+                            <param id="0" name="Object">Nurse</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="9365352980966188">
+                            <conditions>
+                                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="4434868135789758" type="Nurse">
+                                    <param id="0" name="Object">FFPlayer</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="8648756370332838" type="Nurse">
+                                    <param id="0" name="Instance variable">seesPlayer</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3971407508703685">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="7176072462588301" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="2086589607224322" type="Nurse">
+                                    <param id="0" name="Instance variable">seesPlayer</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="8522057272871662">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="2384393539582241" type="Nurse">
+                            <param id="0" name="Object">Point1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="4595336555906588" type="Nurse">
+                            <param id="0" name="Instance variable">seesPlayer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="5695513143374479" type="Nurse">
+                            <param id="0" name="X">point2.X</param>
+                            <param id="1" name="Y">point2.Y</param>
+                        </action>
+                        <action behavior="Pathfinding" id="1" name="Move along path" sid="4961909631737918" type="Nurse" />
+                        <action id="4" name="Set animation" sid="8596010194938711" type="Nurse">
+                            <param id="0" name="Animation">&quot;Down&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1135606159650455">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1432004618451735" type="Nurse">
+                            <param id="0" name="Object">Point2</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="5738444233347322" type="Nurse">
+                            <param id="0" name="Instance variable">seesPlayer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="3433514029034451" type="Nurse">
+                            <param id="0" name="X">point1.X</param>
+                            <param id="1" name="Y">point1.Y</param>
+                        </action>
+                        <action behavior="Pathfinding" id="1" name="Move along path" sid="8990579865106931" type="Nurse" />
+                        <action id="4" name="Set animation" sid="7545259821669446" type="Nurse">
+                            <param id="0" name="Animation">&quot;Up&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="619725148750332">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="6328659618996719" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="6182873143558113" type="Nurse">
+                            <param id="0" name="Instance variable">seesPlayer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="8928160496727501" type="Nurse">
+                            <param id="0" name="X">Point2.X</param>
+                            <param id="1" name="Y">point2.Y</param>
+                        </action>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="336276107458957" type="FFPlayer">
+                            <param id="0" name="Input">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5180302746677764">
+                    <conditions>
+                        <condition behavior="Pathfinding" id="0" name="On path found" sid="9253161303312228" type="Nurse" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="1" name="Move along path" sid="5520128936591365" type="Nurse" />
+                    </actions>
+                </event-block>
+                <event-block sid="6547236140093479">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="2559641860482922" type="Nurse">
+                            <param id="0" name="Instance variable">seesPlayer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="6974272592355526" type="FFPlayer">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action disabled="1" id="-10" name="Set value" sid="9005519041111484" type="Nurse">
+                            <param id="0" name="Instance variable">seesPlayer</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Pathfinding" id="2" name="Stop" sid="953779605222756" type="Nurse" />
+                        <action disabled="1" id="-16" name="Wait" sid="9911815665562143" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="7031377474956571" type="Nurse">
+                            <param id="0" name="X">FFPlayer.X</param>
+                            <param id="1" name="Y">FFPlayer.Y</param>
+                        </action>
+                        <action id="-21" name="Rotate toward position" sid="9527452781741646" type="Nurse">
+                            <param id="0" name="Degrees">(Nurse.Angle - FFPlayer.Angle)</param>
+                            <param id="1" name="X">FFPlayer.X</param>
+                            <param id="2" name="Y">FFPlayer.Y</param>
+                        </action>
+                        <action behavior="Pathfinding" id="1" name="Move along path" sid="226521579832628" type="Nurse" />
+                    </actions>
+                </event-block>
+                <event-block sid="5008457217388907">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8452466404957444" type="Nurse">
+                            <param id="0" name="Object">FFPlayer</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="5752657322313885" type="System">
+                            <param id="0" name="Layout">First Floor</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="9794605803439166" title="FL Brad">
+            <sub-events>
+                <event-block sid="6520680008494292">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="734775543435901" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="2221493015707045" type="Brad">
+                            <param id="0" name="X">FFPlayer.X - 50</param>
+                            <param id="1" name="Y">FFPlayer.Y</param>
+                        </action>
+                        <action behavior="Pathfinding" id="1" name="Move along path" sid="1940511138770628" type="Brad" />
+                    </actions>
+                </event-block>
+                <event-block sid="32722340780697">
+                    <conditions>
+                        <condition behavior="Pathfinding" id="0" name="On path found" sid="6379079458558638" type="Brad" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="1" name="Move along path" sid="5509041743855686" type="Brad" />
+                        <action id="-16" name="Wait" sid="350122257081645" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="4174543708032568" type="Brad">
+                            <param id="0" name="X">FFplayer.X - 50</param>
+                            <param id="1" name="Y">FFplayer.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8652902904379215">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="981954794784361" type="Brad">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="X co-ordinate">FFPlayer.X - 50</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="4546129207091675" type="Brad">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Y co-ordinate">FFPlayer.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="1014077393621556" type="Brad">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9215751559137665">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6477892437106363" type="FFPlayer">
+                            <param id="0" name="Object">Brad</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set collisions enabled" sid="4595910105544256" type="Brad">
+                            <param id="0" name="Collisions">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="4417235843301668" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="4373371256354168" type="Brad">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="727012820241874" title="Nightmare">
+            <sub-events>
+                <event-block sid="293816099682677">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="1716655679820415" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="6680229487326386">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="1832787457905477" type="FFPlayer">
+                                    <param id="0" name="Object">GirlBedBox</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="594380651901038" type="System">
+                                    <param id="0" name="Variable">AxeMission</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="2687406511459585" type="TextBG">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="9707525788455934" type="Text">
+                                    <param id="0" name="Text">&quot;Sleeping Girl: *Zzzzzzzz...* Monsters...Demons.. Ahh! Help! Help me!! I need protection!!&#x0D;&#x0A;Shawn: How can I protect you from your dreams?&#x0D;&#x0A;Sleeping Girl: I need... an axe...yes!! *zzzz* Bring me an axe *zzzz*&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="6914171584441516" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="9769285123743667" type="System">
+                                    <param id="0" name="Variable">AxeMission</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="4266373538610631" type="FireAxe">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="8522807064608993" type="System">
+                                    <param id="0" name="Seconds">5.0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="9883739644185157" type="TextBG">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="5947249722961326" type="Text">
+                                    <param id="0" name="Text">&quot;*Whispers to Brad* What do we do now?&#x0D;&#x0A;Brad: Well, an axe is good for protection, but it&apos;s also pretty dangerous to sleep with.&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="8728436585917737" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="4601016156958828">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="6318722779695855" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="7105285235058191">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="4855071221783262" type="FFPlayer">
+                                    <param id="0" name="Object">FireAxe</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="7595194265659167" type="TextBG">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="5762660122970868" type="Text">
+                                    <param id="0" name="Text">&quot;Brad: Look a Fire Axe! Let&apos;s take this back to that sleepy girl&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="6587115485945547" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="7657580819624885" type="System">
+                                    <param id="0" name="Variable">Axe</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="1210421457505124" type="FireAxe" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5981663724391218">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="575311456226292" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="5579291893830957">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="8109077322535273" type="FFPlayer">
+                                    <param id="0" name="Object">GirlBedBox</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="489770776922306" type="System">
+                                    <param id="0" name="Variable">Axe</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="7552004464255353" type="TextBG">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="399246149596987" type="Text">
+                                    <param id="0" name="Text">&quot;Sleeping Girl: Oh...mmmm...Thank you and good night.&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="9075711616897213" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="8934940399334537" type="System">
+                                    <param id="0" name="Variable">Axe</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="8796977856379802" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="2836126992601637" title="Necro">
+            <sub-events>
+                <event-block sid="9546153297443702">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="814274602869429" type="FFPlayer">
+                            <param id="0" name="Object">Door</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="2384289905139675" type="System">
+                            <param id="0" name="Variable">Key</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1164430493327894" type="TextBG">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="4508517754692465" type="Text">
+                            <param id="0" name="Text">&quot;*The door is locked*&#x0D;&#x0A;Brad: One time I saw a patient hide a key in a trash can around here. I wonder if it&apos;s still there...&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3062130592365902" type="Text">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2587465364923604">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="7461449964388323" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="2984218909861127">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="4917613203133446" type="FFPlayer">
+                                    <param id="0" name="Object">TrashBox</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="4469669135945121" type="System">
+                                    <param id="0" name="Variable">NecroMission</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="319456964571849" type="System">
+                                    <param id="0" name="Variable">TrashCans</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="3822226099866414" type="TextBG">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="138399788119166" type="Text">
+                                    <param id="0" name="Text">&quot;There wasn&apos;t anything in this trash can. Let&apos;s try another one.&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="972522669941492" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="3040464494062278" type="TrashBox" />
+                                <action id="-10" name="Add to" sid="1847894636671421" type="System">
+                                    <param id="0" name="Variable">TrashCans</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="4575979992723949">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="2276145820395066" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="2805856518824855">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="7075293410746395" type="FFPlayer">
+                                    <param id="0" name="Object">TrashBox</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="8790997739891816" type="System">
+                                    <param id="0" name="Variable">NecroMission</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="5815867426699535" type="System">
+                                    <param id="0" name="Variable">TrashCans</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="8748535582987983" type="TextBG">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="371328908288465" type="Text">
+                                    <param id="0" name="Text">&quot;*You found the key!&#x0D;&#x0A;Brad: See buddy! I knew we could find one. You&apos;re welcome.&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="4729956167054488" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="1212618839357227" type="System">
+                                    <param id="0" name="Variable">Key</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="9304677260837248">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1649533250248548" type="FFPlayer">
+                            <param id="0" name="Object">Door</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="7517457055178797" type="System">
+                            <param id="0" name="Variable">Key</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="1057685759159431" type="Door" />
+                        <action behavior="Pathfinding" id="4" name="Regenerate obstacle map" sid="3050522500250866" type="Brad" />
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="1461353961738205" type="Brad">
+                            <param id="0" name="X">FFPlayer.X - 50</param>
+                            <param id="1" name="Y">FFPlayer.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2083531426570361">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="5496467267968807" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="3073413125116461">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="5833623023867548" type="FFPlayer">
+                                    <param id="0" name="Object">NecroBox</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="792317674078692" type="System">
+                                    <param id="0" name="Variable">NecroMission</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="2701418908613059" type="System">
+                                    <param id="0" name="Variable">Arm</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="3064200895416022" type="TextBG">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="8177819133389974" type="Text">
+                                    <param id="0" name="Text">&quot;Sick Man: Thank you so much! *Gulp gulp gulp*&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="521240448861639" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="6597121012126269" type="System">
+                                    <param id="0" name="Variable">Arm</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="7572679129729011" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Value">20</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="7746136537421377" type="OD">
+                                    <param id="0" name="X">Necro.X</param>
+                                    <param id="1" name="Y">Necro.Y</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="9235209198812455" type="Necro" />
+                                <action id="-9" name="Destroy" sid="5365423856025305" type="NecroBox" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5006304622755029">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="9222570641497126" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="7854463450951078">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="1242894042035807" type="FFPlayer">
+                                    <param id="0" name="Object">NecroBox</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="9276769726185678" type="System">
+                                    <param id="0" name="Variable">NecroMission</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="8876397747295967" type="TextBG">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="362600612236294" type="Text">
+                                    <param id="0" name="Text">&quot;Sick Man: You there.. *cough cough* I feel so miserable. Why am I always sick?&#x0D;&#x0A;Shawn: You don&apos;t sound that bad.&#x0D;&#x0A;Sick Man: But I do, I&apos;ve been constantly sick since I was 10 years old. What I really need is some cough medicine.&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="6651812845770367" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="1558864170622278" type="System">
+                                    <param id="0" name="Variable">NecroMission</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="5734394735104781" type="System">
+                                    <param id="0" name="Seconds">5.0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="4185979892781858" type="TextBG">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="635338153759779" type="Text">
+                                    <param id="0" name="Text">&quot;*Whispers to Brad* What do we do now?&#x0D;&#x0A;Brad: He doesn&apos;t that sick, getting him medicine could just make things worse.&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="9166945426276504" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="5827663294078446">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="8495553126974151" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="987907484696226">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="4520388091878318" type="FFPlayer">
+                                    <param id="0" name="Object">Arm</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="2835795181842762" type="Arm" />
+                                <action id="-15" name="Set visible" sid="1608429703909618" type="TextBG">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="4454694533259552" type="Text">
+                                    <param id="0" name="Text">&quot;Brad: Hey this could be some of the cough medicine that that one sick guy wanted.&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="1160224180575098" type="Text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="8817530897994239" type="System">
+                                    <param id="0" name="Variable">Arm</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="8186687896220394">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9194040593857013" type="FFPlayer">
+                    <param id="0" name="Object">Door</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1466315881624002" type="System">
+                    <param id="0" name="Variable">NecroMission</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="201228550077485" type="TextBG">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="8326477572326825" type="Text">
+                    <param id="0" name="Text">&quot;*The door is locked*&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1246749490925763" type="Text">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2367660086386542">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8373211097886924" type="System">
+                    <param id="0" name="Variable">NecroMission</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7135336051178094" type="System">
+                    <param id="0" name="Variable">AxeMission</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="11" name="Set collisions enabled" sid="30695006703468" type="Stairs">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="503023062200561">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9742705566766791" type="FFPlayer">
+                    <param id="0" name="Object">Stairs</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="601875774639291" type="System">
+                    <param id="0" name="Layout">Second Floor</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

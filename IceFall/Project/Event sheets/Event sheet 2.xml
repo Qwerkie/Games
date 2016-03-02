@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 2</name>
+    <events>
+        <event-block sid="7184904331844391">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="6858899387669836" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2439090720596472" type="Timer">
+                    <param id="0" name="Text">Timer</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
